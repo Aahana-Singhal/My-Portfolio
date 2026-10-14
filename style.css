@@ -1,0 +1,22 @@
+.card{
+    background-color: rgb(127, 168, 255);
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    
+}  
+.cards {
+display: flex ;
+gap: 40px;
+}
+
+.navbar{
+    background-color: coral;
+    position: sticky;
+
+}
+
+.navbar-name{
+    font-size: xx-large;
+    color: white ;
+}
