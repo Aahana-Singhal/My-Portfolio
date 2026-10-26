@@ -58,11 +58,30 @@ background-color:black ;
 text-align: right;
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content{
+display: none;
+position:absolute;
+color: antiquewhite;
+background-color: black;
+z-index: 1001;
+text-align:left;
+top: 100%;
+min-width: 160 px;
+border-radius: 10px;
+overflow: hidden;
+}
+
+
 .dropdown-content a{
 display: block;
 padding: 10px 14px;
-color: antiquewhite;
+color: rgb(247, 159, 45);
 white-space: nowrap;
+text-decoration: none;
 }
 
 .dropdown:hover .dropdown-content{
