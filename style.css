@@ -124,6 +124,7 @@ Contact Form
 }
 
 .contact input,
+.contact textarea,
 .contact select
 {
 width: 100%;
@@ -132,13 +133,13 @@ box-sizing: border-box;
 border-radius: 10px;
 border: 1px solid gold;
 background-color: grey;
-color: gold;
+color: rgb(255, 255, 255);
 font: inherit;
 
 }
 
 .contact button{
-    background-color: grey;
+    background-color: gold;
     padding: 14px 22px;
 border-radius: 15px;
 cursor: pointer;
@@ -154,15 +155,13 @@ color: aliceblue;
 }
 
 .contact input:focus,
+.contact textarea:focus,
 .contact select:focus{
 outline: 2px solid gold;
 
 }
 
-.contact input {
-    color: gold;
-}
-
+.contact textarea::placeholder,
 .contact input::placeholder {
     color: white;
 }
