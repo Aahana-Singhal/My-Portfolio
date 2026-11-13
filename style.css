@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 25px;
     background-color:gold;
-    padding: 15px;
+    padding: 30px;
     align-items: stretch;
     border-radius: 20px;
     border: 1px solid rgb(0, 0, 0);
@@ -14,11 +14,11 @@
 .cards {
 display: flex ;
 padding: 15px;
-border-radius: 20px;
+border-radius: 20px 30px;
 gap: 40px;
 }
 .card:hover {
- box-shadow: rgb(51, 1, 44);   
+ box-shadow: rgb(252, 252, 252);   
  transform: translateY(-10px);
 }
 
@@ -99,13 +99,6 @@ text-decoration: none;
 }
 
 
-
-h3{
-color: yellow;
-
-
-}
-
 /*       
 ===================================
 Contact Form
@@ -135,7 +128,6 @@ border: 1px solid gold;
 background-color: grey;
 color: rgb(255, 255, 255);
 font: inherit;
-
 }
 
 .contact button{
@@ -166,8 +158,14 @@ outline: 2px solid gold;
     color: white;
 }
 
+.section-soft {background: var(--paper-deep);} 
+.skill-grid  {display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;}
+.skill-card  {position: relative; background: var(--white); border: 1px solid #e2dfd5; padding: 27px 25px 24px; min-height:120px  }
 
 
+:root{
+--paper-deep: #979494;
+--white:  #eeeeee;
 
 
-
+}
