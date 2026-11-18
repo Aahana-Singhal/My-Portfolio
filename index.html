@@ -1,371 +1,758 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   My Portfolio
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar">
+    <div class="navbar-name">Aahana<span>.</span></div>
 
-<link rel="stylesheet" href="style.css">
+    <div class="navbar-links">
+      <a href="#home">Home</a>
 
-</head>
-<body>
-<!-- Navbar Section-->   
-<nav class="navbar">
-    <div class="navbar-name">Aahana</div>
-
-    <div class="navbar-links" align="right">
-    
-
-        <a href="#home">Home</a>
-
-        <div class="dropdown">
-        
-        <a href="#about" class="dropbtn">About Me</a>
+      <!-- About dropdown -->
+      <div class="dropdown">
+        <a href="#about" class="dropbtn">About</a>
         <div class="dropdown-content">
-        <a href="#about">About Me</a>
-        <a href="#school">My School</a>
-        <a href="#hobbies">My Hobbies</a>
-       
-        </div>
-        </div>
- <div class="dropdown">
-        <a href="#skills " class="dropbtn">Skills</a>
-         <div class="dropdown-content">
-            <a href="#skills">My Skills</a>
-            <a href="#marks">My Marks</a>
-            <a href="#achievements">Achievements</a>
-            <a href="#journey">My Journey</a>
-        </div>
-         </div>
-        
-        <a href="#projects">Projects</a>
-       <a href="#goals">Goals</a>
-       <a href="#contacts">Contacts</a>
-    </div> 
-</nav>
-
-<!--intro-->
-<div class="intro">
-<br id="home">
-<h1 >Welcome To My Portfolio</h1>
-
-<p>Hello, I'm Aahana Singhal</p>
-<h4>Curious Mind. Creative Spirit. Lifelong Learner.</h4>
-<p>Welcome to my personal portfolio!
-I am a Class 7 student at Nehru World School who loves exploring new ideas, learning different skills, and challenging myself. From solving mathematical problems to learning German, playing the piano, and practising Taekwondo, I enjoy discovering something new every day.
-This website is a glimpse into my interests, achievements, learning journey, and dreams. Join me as I continue to learn, grow, and explore!
-</p>
-</div>
-<hr>
-<!--about-->
-<br id="about">
-<div class="about me">
-<h2>A Little About Me</h2>
-I am a curious, enthusiastic, and determined student who believes that learning can be an exciting adventure. I enjoy exploring subjects that challenge my thinking and activities that help me express my creativity.
-<h3>What Makes Me, Me?</h3>
-<ul>
-<li>Curiosity: I love asking questions and discovering new things.</li>
-<li>Determination: I believe in practising regularly and learning from mistakes.</li>
-<li>Creativity: Music and reading give me opportunities to explore my imagination.</li>
-<li>Discipline: Taekwondo teaches me the importance of focus and perseverance.</li>    
-</ul>
-</div>
-<hr>
-
-<!--  New Skills Part  -->
-<section class="section section-soft" id="skills">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">02 / THINGS I’M DEVELOPING</p>
-          <h2>Skills in <em>progress.</em></h2>
-          <p class="section-intro">Every new skill starts with curiosity and grows with practice. Here are a few areas I’m exploring.</p>
-        </div>
-        <div class="skill-grid">
-          <article class="skill-card">
-            <span class="card-number">01</span>
-            <div class="skill-icon">&#8984</div>
-            <h3>HTML</h3>
-            <p>Exploring how websites are structured and how content comes together.</p>
-            <span class="card-tag">DIGITAL SKILL</span>
-          </article>
-          <article class="skill-card"><span class="card-number">02</span><div class="skill-icon">✳️</div><h3>CSS</h3><p>Learning how colours, layouts and styles make websites engaging.</p><span class="card-tag">DIGITAL SKILL</span></article>
-          <article class="skill-card"><span class="card-number">03</span><div class="skill-icon">◇</div><h3>Digital creativity</h3><p>Discovering how to turn ideas into useful and interesting web pages.</p><span class="card-tag">CREATIVITY</span></article>
-          <article class="skill-card"><span class="card-number">04</span><div class="skill-icon">◎</div><h3>Problem-solving</h3><p>Building logical thinking, focus and attention to detail.</p><span class="card-tag">PERSONAL STRENGTH</span></article>
-          <article class="skill-card"><span class="card-number">05</span><div class="skill-icon">♫</div><h3>Music & expression</h3><p>Practising piano techniques and developing musical expression.</p><span class="card-tag">CREATIVE SKILL</span></article>
-          <article class="skill-card"><span class="card-number">06</span><div class="skill-icon">文</div><h3>German</h3><p>Learning vocabulary, grammar and everyday phrases.</p><span class="card-tag">LANGUAGE</span></article>
-        </div>
-        <div class="currently-learning">
-          <span class="learning-label">CURRENTLY EXPLORING</span>
-          <span>Website design</span><span>Data analysis using AI</span><span>Piano</span><span>Taekwondo</span><span>German</span>
+          <a href="#about">About Me</a>
+          <a href="#school">My School</a>
+          <a href="#hobbies">My Hobbies</a>
         </div>
       </div>
-    </section>
 
-<hr>
+      <!-- Skills dropdown -->
+      <div class="dropdown">
+        <a href="#skills" class="dropbtn">Skills</a>
+        <div class="dropdown-content">
+          <a href="#skills">My Skills</a>
+          <a href="#marks">My Marks</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#journey">My Journey</a>
+        </div>
+      </div>
 
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact" class="connect-btn">Let's connect <span>↗</span></a>
+    </div>
+  </nav>
 
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero" id="home">
+    <!-- Hero section left: introduction and buttons -->
+    <div class="hero-content">
+      <div class="eyebrow"><span class="line"></span> MY LITTLE CORNER OF THE INTERNET</div>
+      <h1>Curious mind.<br><span>Creative spirit.</span><br>Always learning.</h1>
+      <p class="intro-text">Hello, I'm Aahana Singhal — a student who loves exploring new ideas, learning different skills and turning curiosity into creativity.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="primary-btn">Explore my work <span>↗</span></a>
+        <a href="#about" class="secondary-btn">A little about me <span>↓</span></a>
+      </div>
+      <div class="hero-footer"><span class="green-dot"></span> Student · Learner · Explorer</div>
+    </div>
 
-<!--projects-->
-<br id="projects">
-<h3>Ideas Into Reality</h3>
-<p>I enjoy discovering new things, and I want to use my learning to create projects that are both interesting and useful. Every project is an opportunity to experiment, solve problems, and express my creativity</p>
+    <!-- Hero section right: decorative orbital graphic 
+    <div class="hero-graphic" aria-label="Decorative learning and creativity graphic">
+      <div class="orbit orbit-one"></div>
+      <div class="orbit orbit-two"></div>
+      <div class="orbit orbit-three"></div>
+      <div class="center-circle"><span class="letter">A</span><span class="circle-caption">LEARN · CREATE · GROW</span></div>
+      <span class="star star-one">✳</span><span class="star star-two">✧</span>
+      <span class="star star-three">✦</span><span class="star star-four">✳</span>
+      <div class="floating-label label-one">Stay curious</div>
+      <div class="floating-label label-two">Ideas in progress ↗</div>
+    </div>-->
+  </section>
+  <hr/>
 
+  <!--about-->
+  <span id="about">
+  </span>
+  <div class="about me">
+   <h2>
+    A Little About Me
+   </h2>
+   <p>
+    I am a curious, enthusiastic, and determined student who believes that learning can be an exciting adventure. I enjoy exploring subjects that challenge my thinking and activities that help me express my creativity.
+   </p>
+   <h3>
+    What Makes Me, Me?
+   </h3>
+   <ul>
+    <li>
+     Curiosity: I love asking questions and discovering new things.
+    </li>
+    <li>
+     Determination: I believe in practising regularly and learning from mistakes.
+    </li>
+    <li>
+     Creativity: Music and reading give me opportunities to explore my imagination.
+    </li>
+    <li>
+     Discipline: Taekwondo teaches me the importance of focus and perseverance.
+    </li>
+   </ul>
+  </div>
+  <hr/>
+  <!--  New Skills Part  -->
+  <section class="section section-soft" id="skills">
+   <div class="container">
+    <div class="section-heading">
+     <p class="eyebrow">
+      02 / THINGS I’M DEVELOPING
+     </p>
+     <h2>
+      Skills in
+      <em>
+       progress.
+      </em>
+     </h2>
+     <p class="section-intro">
+      Every new skill starts with curiosity and grows with practice. Here are a few areas I’m exploring.
+     </p>
+    </div>
+    <div class="skill-grid">
+     <article class="skill-card">
+      <span class="card-number">
+       01
+      </span>
+      <div class="skill-icon">
+       ⌘
+      </div>
+      <h3>
+       HTML
+      </h3>
+      <p>
+       Exploring how websites are structured and how content comes together.
+      </p>
+      <span class="card-tag">
+       DIGITAL SKILL
+      </span>
+     </article>
+     <article class="skill-card">
+      <span class="card-number">
+       02
+      </span>
+      <div class="skill-icon">
+       ✳️
+      </div>
+      <h3>
+       CSS
+      </h3>
+      <p>
+       Learning how colours, layouts and styles make websites engaging.
+      </p>
+      <span class="card-tag">
+       DIGITAL SKILL
+      </span>
+     </article>
+     <article class="skill-card">
+      <span class="card-number">
+       03
+      </span>
+      <div class="skill-icon">
+       ◇
+      </div>
+      <h3>
+       Digital creativity
+      </h3>
+      <p>
+       Discovering how to turn ideas into useful and interesting web pages.
+      </p>
+      <span class="card-tag">
+       CREATIVITY
+      </span>
+     </article>
+     <article class="skill-card">
+      <span class="card-number">
+       04
+      </span>
+      <div class="skill-icon">
+       ◎
+      </div>
+      <h3>
+       Problem-solving
+      </h3>
+      <p>
+       Building logical thinking, focus and attention to detail.
+      </p>
+      <span class="card-tag">
+       PERSONAL STRENGTH
+      </span>
+     </article>
+     <article class="skill-card">
+      <span class="card-number">
+       05
+      </span>
+      <div class="skill-icon">
+       ♫
+      </div>
+      <h3>
+       Music &amp; expression
+      </h3>
+      <p>
+       Practising piano techniques and developing musical expression.
+      </p>
+      <span class="card-tag">
+       CREATIVE SKILL
+      </span>
+     </article>
+     <article class="skill-card">
+      <span class="card-number">
+       06
+      </span>
+      <div class="skill-icon">
+       文
+      </div>
+      <h3>
+       German
+      </h3>
+      <p>
+       Learning vocabulary, grammar and everyday phrases.
+      </p>
+      <span class="card-tag">
+       LANGUAGE
+      </span>
+     </article>
+    </div>
+    <div class="currently-learning">
+     <span class="learning-label">
+      CURRENTLY EXPLORING
+     </span>
+     <span>
+      Website design
+     </span>
+     <span>
+      Data analysis using AI
+     </span>
+     <span>
+      Piano
+     </span>
+     <span>
+      Taekwondo
+     </span>
+     <span>
+      German
+     </span>
+    </div>
+   </div>
+  </section>
+  <hr/>
+  <!--projects-->
+  <span id="projects">
+  </span>
+  <h3>
+   Ideas Into Reality
+  </h3>
+  <p>
+   I enjoy discovering new things, and I want to use my learning to create projects that are both interesting and useful. Every project is an opportunity to experiment, solve problems, and express my creativity
+  </p>
+  <section class="cards">
+   <div class="card">
+    <h4>
+     Project 01 — My Personal Portfolio.
+    </h4>
+    <div class="card">
+     <p>
+      About: A personal website that introduces me, showcases my interests, and highlights my achievements.
+     </p>
+    </div>
+    <div class="card">
+     <p>
+      Tools: HTML and CSS, as I learn to use them.
+     </p>
+    </div>
+   </div>
+   <div class="card">
+    <h4>
+     Project 02 — My Reading Corner
+    </h4>
+    <div class="card">
+     <p>
+      About: A digital collection of books I enjoy, including short reviews, favourite characters, and memorable lessons.
+     </p>
+    </div>
+    <div class="card">
+     <p>
+      Tools: HTML, CSS, or a digital document.
+     </p>
+    </div>
+   </div>
+   <div class="card">
+    <h4>
+     Project 03 — My German Learning Journal
+    </h4>
+    <div class="card">
+     <p>
+      About: A collection of German vocabulary, everyday phrases, and sentences that I learn as I practise the language.
+     </p>
+    </div>
+    <div class="card">
+     <p>
+      Tools: Duolingo and a notebook or digital document.
+     </p>
+    </div>
+   </div>
+  </section>
+  <h4>
+   Whats Next?
+  </h4>
+  <p>
+   I look forward to creating more projects that combine technology, creativity, and learning.
+  </p>
+  <hr/>
+  <!--academics-->
+  <span id="school">
+  </span>
+  <h3>
+   My Academic Journey
+  </h3>
+  <p>
+   School: Nehru World School
+  </p>
+  <p>
+   Class: 7
+  </p>
+  <p>
+   School is where I explore new ideas, build knowledge, and develop skills that help me understand the world around me.
+  </p>
+  <h4>
+   My Favourite Subject — Mathematics
+  </h4>
+  <p>
+   Mathematics is my favourite subject because I enjoy logical thinking, solving challenging problems, and discovering different ways to reach a solution.
+  </p>
+  <h4>
+   Other Subjects
+  </h4>
+  <ul>
+   <li>
+    Mathematics: Numbers, logic, and problem-solving
+   </li>
+   <li>
+    Science: Exploring scientific concepts and understanding how things work.
+   </li>
+   <li>
+    English: Developing my reading, writing, and communication skills.
+   </li>
+   <li>
+    German: Discovering a new language and culture.
+   </li>
+   <li>
+    Hindi: Improving my language and literary skills.
+   </li>
+   <li>
+    Geography: Learning about places, people, and our planet.
+   </li>
+   <li>
+    GP: Exploring ideas and developing my understanding of different topics.
+   </li>
+  </ul>
+  <hr/>
+  <!-- My marks table-->
+  <span id="marks">
+  </span>
+  <h3>
+   My Academic Highlights
+  </h3>
+  <table *border*="50">
+   <tr>
+    <th colspan="3">
+     My marks for class 7
+    </th>
+   </tr>
+   <tr>
+    <th>
+     S.no
+    </th>
+    <th>
+     Subject
+    </th>
+    <th>
+     Marks
+    </th>
+   </tr>
+   <tr>
+    <td>
+     1
+    </td>
+    <td>
+     English
+    </td>
+    <td>
+     98
+    </td>
+   </tr>
+   <tr>
+    <td>
+     2
+    </td>
+    <td>
+     Maths
+    </td>
+    <td>
+     95
+    </td>
+   </tr>
+   <tr>
+    <td>
+     3
+    </td>
+    <td>
+     Science
+    </td>
+    <td>
+     86
+    </td>
+   </tr>
+   <tr>
+    <td>
+     4
+    </td>
+    <td>
+     Hindi
+    </td>
+    <td>
+     94
+    </td>
+   </tr>
+   <tr>
+    <td>
+     5
+    </td>
+    <td>
+     German
+    </td>
+    <td>
+     87
+    </td>
+   </tr>
+   <tr>
+    <td>
+     6
+    </td>
+    <td>
+     Geography
+    </td>
+    <td>
+     95
+    </td>
+   </tr>
+   <tr>
+    <td>
+     7
+    </td>
+    <td>
+     Global Perspectives
+    </td>
+    <td>
+     90
+    </td>
+   </tr>
+  </table>
+  <p>
+   These results reflect my efforts and motivate me to keep learning, improving, and exploring new challenges.
+  </p>
+  <hr/>
+  <!--achievments-->
+  <div class="achievement">
+   <span id="achievements">
+   </span>
+   <h3>
+    Small Steps, Big Achievements
+   </h3>
+   <p>
+    Every achievement reminds me that dedication, curiosity, and consistent effort can lead to wonderful results.
+   </p>
+   <h4>
+    My Proud Moments
+   </h4>
+   <h5>
+    Science Olympiad Gold Medal
+   </h5>
+   <p>
+    My biggest achievement so far is winning a gold medal in the Science Olympiad. It is a milestone that motivates me to keep exploring science and challenging myself.
+   </p>
+   <h5>
+    Academic Achievements
+   </h5>
+   <p>
+    I am proud of scoring 95/100 in Mathematics and 98/100 in English.
+   </p>
+   <h5>
+    German Learning Progress
+   </h5>
+   <p>
+    Scoring 96/100 in German encourages me to continue developing my language skills.
+   </p>
+   <h4>
+    Activities That Help Me Grow
+   </h4>
+   <ul>
+    <li>
+     Learning German through Duolingo
+    </li>
+    <li>
+     Practising and improving my piano skills
+    </li>
+    <li>
+     Training in Taekwondo
+    </li>
+    <li>
+     Reading books and exploring new ideas
+    </li>
+   </ul>
+   <p>
+    Every milestone is not just a reason to celebrate, but also a motivation to aim higher and learn more
+   </p>
+  </div>
+  <hr/>
+  <!--journey-->
+  <span id="journey">
+  </span>
+  <h3>
+   Always Learning, Always Growing
+  </h3>
+  <p>
+   My learning journey is about more than textbooks and examinations. It is about exploring my interests, trying new activities, and discovering what I can achieve through practice.
+  </p>
+  <h4>
+   Where It All Began
+  </h4>
+  <p>
+   My curiosity about different subjects encouraged me to explore mathematics, science, reading, languages, music, and martial arts. Each activity has introduced me to a different way of learning
+  </p>
+  <h4>
+   Lessons I've Learned
+  </h4>
+  <ul>
+   <li>
+    From academics: Think logically, ask questions, and approach problems patiently.
+   </li>
+   <li>
+    From German: Consistency and daily practice help me build new skills.
+   </li>
+   <li>
+    From piano: Progress comes from patience and regular practice.
+   </li>
+   <li>
+    From Taekwondo: Discipline, focus, and perseverance are important.
+   </li>
+   <li>
+    From reading: Books can expand my imagination and introduce me to new perspectives.
+   </li>
+  </ul>
+  <hr/>
+  <!--goals-->
+  <span id="goals">
+  </span>
+  <h4>
+   What's Next on My Journey?
+  </h4>
+  <p>
+   I want to strengthen my academic knowledge, improve my German, become more confident at the piano, and develop my website-building skills.I know that learning is a continuous journey, and I am excited to discover where it takes me next!
+  </p>
+  <h3>
+   Dream Big. Start Small. Keep Growing.
+  </h3>
+  <p>
+   I believe that every big achievement begins with a small step. My goals help me stay curious, focused, and motivated
+  </p>
+  <h4>
+   My Short-Term Goals
+  </h4>
+  <ul>
+   <li>
+    Improve my HTML and CSS skills and create more web pages.
+   </li>
+   <li>
+    Continue learning German through regular practice.
+   </li>
+   <li>
+    Build my knowledge of mathematics and science.
+   </li>
+   <li>
+    Develop my piano-playing abilities.
+   </li>
+   <li>
+    Continue progressing in Taekwondo.
+   </li>
+   <li>
+    Explore new books, ideas, and creative projects.
+   </li>
+  </ul>
+  <h4>
+   My Future Dreams
+  </h4>
+  <p>
+   I dream of becoming a knowledgeable, creative, and confident person who uses learning and technology to make a positive difference. I want to explore new opportunities, solve interesting problems, and keep discovering my strengths.
+  </p>
+  <h4>
+   Skills I Want to Improve
+  </h4>
+  <ul>
+   <li>
+    Coding and website design
+   </li>
+   <li>
+    Creative and logical thinking
+   </li>
+   <li>
+    Communication and writing
+   </li>
+   <li>
+    Musical expression
+   </li>
+   <li>
+    Language learning
+   </li>
+   <li>
+    Confidence and problem-solving
+   </li>
+  </ul>
+  <p>
+   My motto: I don't have to know everything today. I just have to keep learning something new!
+  </p>
+  <hr/>
+  <!--hobbies-->
+  <span id="hobbies">
+  </span>
+  <h3>
+   Beyond the Classroom
+  </h3>
+  <p>
+   My hobbies allow me to explore different sides of myself. Whether I am reading a book, practising German, playing the piano, or training in Taekwondo, each activity brings a new learning experience.
+  </p>
+  <h4>
+   Reading Books
+  </h4>
+  <p>
+   Books take me into new worlds, introduce me to fascinating ideas, and inspire my imagination. Reading is one of my favourite ways to learn beyond the classroom.
+  </p>
+  <h4>
+   Learning German
+  </h4>
+  <p>
+   I use Duolingo to practise German, discover new vocabulary, and learn useful phrases. I enjoy the challenge of understanding and communicating in another language.
+  </p>
+  <h4>
+   Playing the Piano
+  </h4>
+  <p>
+   Music gives me a creative outlet and helps me develop concentration, patience, and a sense of rhythm. I enjoy learning and improving through regular practice.
+  </p>
+  <h4>
+   Practising Taekwondo
+  </h4>
+  <p>
+   Taekwondo helps me work on my focus, coordination, confidence, and discipline. It reminds me that improvement comes with dedication and perseverance.
+  </p>
+  <h4>
+   My Perfect Mix
+  </h4>
+  <p>
+   I love the balance between intellectual challenges, creative expression, language learning, and physical activity. Each hobby teaches me something different and makes my learning journey more exciting.
+  </p>
+  <hr/>
+  <!--thanks-->
+  <h3>
+   Thanks for Stopping By!
+  </h3>
+  <p>
+   Thank you for visiting my portfolio and taking the time to learn about me, my interests, and my achievements.
 
+This website represents my journey as a student, learner, and explorer. I look forward to adding new projects, celebrating future milestones, and sharing the skills I develop along the way.
+  </p>
+  <h3>
+   Let's Keep Learning!
+  </h3>
+  <p>
+   I believe that curiosity opens doors to new possibilities. No matter how much I learn, there will always be something new to discover, create, or explore.
+  </p>
+  <h4>
+   Stay curious. Keep learning. Dream big!
+  </h4>
+  <p>
+   <i>
+    Thank you for being a part of my learning journey!
+   </i>
+  </p>
+  <h3>
+   <b>
+    -Aahana
+   </b>
+  </h3>
+  <!--
 
-<section class="cards">
-<div class="card">
-    <h4>Project 01 — My Personal Portfolio.</h4>
-<div class="card">
-<p>About: A personal website that introduces me, showcases my interests, and highlights my achievements.</p>
-</div>
-<div class="card">
-<p>Tools: HTML and CSS, as I learn to use them.</p>
-</div>
-</div>
+\=====================================
 
-
-<div class="card">
-    <h4>Project 02 — My Reading Corner</h4>
-<div class="card">
-<p>About: A digital collection of books I enjoy, including short reviews, favourite characters, and memorable lessons.</p>
-</div>
-<div class="card">
-<p>Tools: HTML, CSS, or a digital document.</p>
-</div>
-</div>
-
-<div class="card">
-    <h4>Project 03 — My German Learning Journal</h4>
-<div class="card">
-<p>About: A collection of German vocabulary, everyday phrases, and sentences that I learn as I practise the language.</p>
-</div>
-<div class="card">
-<p>Tools: Duolingo and a notebook or digital document.</p>
-</div>
-</div>
-</section>
-
-<h4>Whats Next?</h4>
-<p>I look forward to creating more projects that combine technology, creativity, and learning.</p>
-<hr>
-<!--academics-->
-<br id="school">
-<h3>My Academic Journey</h3>
-<p>School: Nehru World School</p>
-<p>Class: 7</p>
-<p>School is where I explore new ideas, build knowledge, and develop skills that help me understand the world around me.</p>
-<h4>My Favourite Subject — Mathematics</h4>
-<p>Mathematics is my favourite subject because I enjoy logical thinking, solving challenging problems, and discovering different ways to reach a solution.</p>
-<h4>Other Subjects</h4>
-<ul>
-<li>Mathematics: Numbers, logic, and problem-solving</li>
-<li>Science: Exploring scientific concepts and understanding how things work.</li>
-<li>English: Developing my reading, writing, and communication skills.</li>
-<li>German: Discovering a new language and culture.</li>
-<li>Hindi: Improving my language and literary skills.</li>
-<li>Geography: Learning about places, people, and our planet.</li>
-<li>GP: Exploring ideas and developing my understanding of different topics.</li>
-</ul>
-<hr>
-<!-- My marks table-->
-<br id="marks">
-<h3>My Academic Highlights</h3>
-<table border="50" >
-
-<tr>
-    <th colspan="3">My marks for class 7</th>
-</tr>    
-<tr>
-    <th>S.no</th>
-    <th>Subject</th>
-    <th>Marks</th>
-</tr>
-<tr>
-    <td>1</td>
-    <td>English</td>
-    <td>98</td>
-</tr>
-<tr>
-    <td>2</td>
-    <td>Maths</td>
-    <td>95</td>
-</tr>
-<tr>
-    <td>3</td>
-    <td>Science</td>
-    <td>86</td>
-</tr>
-<tr>
-    <td>4</td>
-    <td>Hindi</td>
-    <td>94</td>
-</tr>
-<tr>
-    <td>5</td>
-    <td>German</td>
-    <td>87</td>
-</tr>
-<tr>
-    <td>6</td>
-    <td>Geography</td>
-    <td>95</td>
-</tr>
-<tr>
-    <td>7</td>
-    <td>Global Perspectives</td>
-    <td>90</td>
-</tr>
-
-
-</table>
-<p>These results reflect my efforts and motivate me to keep learning, improving, and exploring new challenges.</p>
-<hr>
-<!--achievments-->
-<div class="achievement">
-<br  id="achievements">
-<h3>Small Steps, Big Achievements</h3>
-<p>Every achievement reminds me that dedication, curiosity, and consistent effort can lead to wonderful results.</p>
-<h4>My Proud Moments</h4>
-<h5>Science Olympiad Gold Medal</h5>
-<p>My biggest achievement so far is winning a gold medal in the Science Olympiad. It is a milestone that motivates me to keep exploring science and challenging myself.</p>
-<h5>Academic Achievements</h5>
-<p>I am proud of scoring 95/100 in Mathematics and 98/100 in English.</p>
-<h5>German Learning Progress</h5>
-<p>Scoring 96/100 in German encourages me to continue developing my language skills.</p>
-<h4>Activities That Help Me Grow</h4>
-<ul>
-<li>Learning German through Duolingo</li>
-<li>Practising and improving my piano skills</li>    
-<li>Training in Taekwondo</li>
-<li>Reading books and exploring new ideas</li>
-</ul>
-<p>Every milestone is not just a reason to celebrate, but also a motivation to aim higher and learn more</p>
-</div>
-<hr>
-<!--journey-->
-<br id="journey">
-<h3>Always Learning, Always Growing</h3>
-<p>My learning journey is about more than textbooks and examinations. It is about exploring my interests, trying new activities, and discovering what I can achieve through practice.</p>
-<h4>Where It All Began</h4>
-<p>My curiosity about different subjects encouraged me to explore mathematics, science, reading, languages, music, and martial arts. Each activity has introduced me to a different way of learning</p>
-<h4>Lessons I've Learned</h4>
-<ul>
-<li>From academics: Think logically, ask questions, and approach problems patiently.</li>
-<li>From German: Consistency and daily practice help me build new skills.</li>
-<li>From piano: Progress comes from patience and regular practice.</li>
-<li>From Taekwondo: Discipline, focus, and perseverance are important.</li>
-<li>From reading: Books can expand my imagination and introduce me to new perspectives.</li>
-</ul>
-<hr>
-<!--goals-->
-<br id="goals">
-<h4>What's Next on My Journey?</h4>
-<p>I want to strengthen my academic knowledge, improve my German, become more confident at the piano, and develop my website-building skills.I know that learning is a continuous journey, and I am excited to discover where it takes me next!</p>
-<h3>Dream Big. Start Small. Keep Growing.</h3>
-<p>I believe that every big achievement begins with a small step. My goals help me stay curious, focused, and motivated</p>
-<h4>My Short-Term Goals</h4>
-<ul>
-<li>Improve my HTML and CSS skills and create more web pages.</li>
-<li>Continue learning German through regular practice.</li>
-<li>Build my knowledge of mathematics and science.</li>
-<li>Develop my piano-playing abilities.</li>
-<li>Continue progressing in Taekwondo.</li>
-<li>Explore new books, ideas, and creative projects.</li>
-</ul>
-<h4>My Future Dreams</h4>
-<p>I dream of becoming a knowledgeable, creative, and confident person who uses learning and technology to make a positive difference. I want to explore new opportunities, solve interesting problems, and keep discovering my strengths.</p>
-<h4>Skills I Want to Improve</h4>
-<ul>
-<li>Coding and website design</li>
-<li>Creative and logical thinking</li>
-<li>Communication and writing</li>
-<li>Musical expression</li>
-<li>Language learning</li>
-<li>Confidence and problem-solving</li>
-</ul>
-<p>My motto: I don't have to know everything today. I just have to keep learning something new!</p>
-<hr>
-<!--hobbies-->
-<br id="hobbies">
-<h3>Beyond the Classroom </h3>
-<p>My hobbies allow me to explore different sides of myself. Whether I am reading a book, practising German, playing the piano, or training in Taekwondo, each activity brings a new learning experience.</p>
-<h4>Reading Books</h4>
-<p>Books take me into new worlds, introduce me to fascinating ideas, and inspire my imagination. Reading is one of my favourite ways to learn beyond the classroom.</p>
-<h4>Learning German</h4>
-<p>I use Duolingo to practise German, discover new vocabulary, and learn useful phrases. I enjoy the challenge of understanding and communicating in another language.</p>
-<h4>Playing the Piano</h4>
-<p>Music gives me a creative outlet and helps me develop concentration, patience, and a sense of rhythm. I enjoy learning and improving through regular practice.</p>
-<h4>Practising Taekwondo</h4>
-<p>Taekwondo helps me work on my focus, coordination, confidence, and discipline. It reminds me that improvement comes with dedication and perseverance.</p>
-<h4>My Perfect Mix</h4>
-<p>I love the balance between intellectual challenges, creative expression, language learning, and physical activity. Each hobby teaches me something different and makes my learning journey more exciting.</p>
-<hr>
-<!--thanks-->
-<h3>Thanks for Stopping By!</h3>
-<p>Thank you for visiting my portfolio and taking the time to learn about me, my interests, and my achievements.
-This website represents my journey as a student, learner, and explorer. I look forward to adding new projects, celebrating future milestones, and sharing the skills I develop along the way.</p>
-<h3>Let's Keep Learning!</h3>
-<p>I believe that curiosity opens doors to new possibilities. No matter how much I learn, there will always be something new to discover, create, or explore.</p>
-<h4>Stay curious. Keep learning. Dream big!</h4>
-<p><i>Thank you for being a part of my learning journey!</i></p>
-<h3><b>-Aahana</b></h3> 
-
-<!--
-=====================================
 Contacts
-=====================================
--->
-<br id="contacts">
-<section class="contact" id="contact">
 
+\=====================================
 
-    <h3>Let's Connect!!!!</h3>
-<p>Want to know more? Tell Me About Yourself</p>
-
-<form>
-    
-    <label for="name" >Your Name</label>
-    <input type="text" id="name" placeholder="Enter Your Name" required>
-    
-    <label for="email">Your email</label>
-    <input type="text" id="name" placeholder="Enter Your Email" required>
-
-    
-    <label for="subject">Your Favourite Subject</label>
-    <select id="subject" required>
-        <option value="">Choose a subject</option>
-        <option>Maths</option>
-        <option>Science</option>
-        <option >History</option>
-        <option >English</option>
+\-->
+  <section class="contact" id="contact">
+   <h3>
+    Let's Connect!!!!
+   </h3>
+   <p>
+    Want to know more? Tell Me About Yourself
+   </p>
+   <form id="contact-form">
+    <label for="name">
+     Your Name
+    </label>
+    <input id="name" name="name" placeholder="Enter Your Name" required="" type="text"/>
+    <label for="email">
+     Your email
+    </label>
+    <input id="email" name="email" placeholder="Enter Your Email" required="" type="email"/>
+    <label for="subject">
+     Your Favourite Subject
+    </label>
+    <select id="subject" name="subject" required="">
+     <option value="">
+      Choose a subject
+     </option>
+     <option value="maths">
+      Maths
+     </option>
+     <option value="science">
+      Science
+     </option>
+     <option value="history">
+      History
+     </option>
+     <option value="english">
+      English
+     </option>
     </select>
-    <br>
-    <br>
-<label for="message">Your Message</label>
-<textarea id="message" rows="4" placeholder="Write Your Message"requiredS></textarea>    
-
-
-
-
-
-
-<button type="submit">Send</button>
-
-</form>
-
-
-</section>
-
-
-<br>
-<br>
-<br>
-<br>
-<footer class="site-footer">
-<hr color="black">
-
-
-<p>Created by Aahana | All rights reserved | 2026</p>
-</footer>
-</body>
+    <br/>
+    <br/>
+    <label for="message">
+     Your Message
+    </label>
+    <textarea id="message" name="message" placeholder="Write Your Message" required="" rows="4"></textarea>
+    <button type="submit">
+     Send
+    </button>
+   </form>
+  </section>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <footer class="site-footer">
+   <hr color="black"/>
+   <p>
+    Created by Aahana | All rights reserved | 2026
+   </p>
+  </footer>
+ </body>
 </html>
