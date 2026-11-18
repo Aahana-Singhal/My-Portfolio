@@ -169,3 +169,16 @@ outline: 2px solid gold;
 
 
 }
+/* Skills */
+.section-soft { background: var(--paper-deep); }
+.skill-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.skill-card { position: relative;background: var(--white);border: 1px solid #e2dfd5;padding: 27px 25px 24px; min-height: 225px; transition: transform .25s ease, box-shadow .25s ease; }
+.skill-card:hover, .project-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(23,35,33,.08); }
+.card-number { position: absolute; top: 21px; right: 22px; color: #b8b8aa; font-size: 10px; }
+.skill-icon { width: 39px; height: 39px; display: grid; place-items: center; background: #f0eadc; color: var(--gold); font-size: 21px; margin-bottom: 19px; }
+.skill-card h3, .project-info h3, .achievement-card h3, .hobby-item h3 { font: 600 20px var(--serif); }
+.skill-card p, .project-info > p:not(.project-type), .achievement-card p, .hobby-item p { color: var(--muted); font-size: 12px; line-height: 1.8; margin-top: 8px; }
+.card-tag, .project-type { display: block; color: var(--gold); font-size: 8px; font-weight: 700; letter-spacing: 1.5px; margin-top: 19px; }
+.currently-learning { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 27px; }
+.learning-label { font-size: 9px; letter-spacing: 1.3px; color: var(--muted); font-weight: 700; margin-right: 7px; }
+.currently-learning span:not(.learning-label) { background: transparent; border: 1px solid #d1cbbb; padding: 7px 12px; font-size: 10px; color: #59645b; border-radius: 30px; }
