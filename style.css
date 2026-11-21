@@ -188,7 +188,7 @@ body {
 .orbit-three { width: 400px; height: 260px; }
 .center-circle {
     width: 150px;
-    height:150px;
+    height: 150px;
     background: #66659a;
     border-radius: 50%;
     display: flex;
