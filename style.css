@@ -379,7 +379,21 @@ body {
     font-size: 10px;
     color: #59645b;
     border-radius: 30px;
+
 }
+
+/* Goals */
+.goals-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 75px; }
+.goal-quote { background: var(--ink); color: var(--paper); padding: 38px; font: 600 25px/1.5 var(--serif); align-self: start; }
+.goal-quote span { display: block; color: var(--gold-light); font: 600 10px var(--sans); letter-spacing: 1px; margin-top: 25px; }
+.goal-content h3 { font: 600 20px var(--serif); margin-bottom: 13px; }
+.goal-list { list-style: none; }
+.goal-list li { position: relative; padding: 9px 0 9px 23px; color: var(--muted); font-size: 12px; border-bottom: 1px solid var(--line); }
+.goal-list li::before { content: "✳"; position: absolute; left: 0; color: var(--gold); }
+.future-heading { margin-top: 27px; }
+.goal-content > p { color: var(--muted); font-size: 13px; }
+
+
 /* Intro ticker */
 .intro-strip { background: var(--ink); color: var(--paper); }
 .strip-inner { min-height: 65px; display: flex; justify-content: space-between; align-items: center; gap: 15px; font-size: 10px; font-weight: 700; letter-spacing: 2px; }
