@@ -187,8 +187,8 @@ body {
 .orbit-two { width: 350px; height: 225px; }
 .orbit-three { width: 400px; height: 260px; }
 .center-circle {
-    width: 142px;
-    height: 142px;
+    width: 150px;
+    height:150px;
     background: #66659a;
     border-radius: 50%;
     display: flex;
@@ -447,9 +447,16 @@ body {
    HTML: <footer class="site-footer">
    ========================================= */
 .site-footer {
-    color: gold;
-    background-color: black;
-    text-align: right;
+    color: #263447;
+    background-color: #e9e4f3;
+    text-align: left;
     padding: 20px 40px 20px 20px;
-    border-radius: 15px;
+    border-radius: 0px;
+
+}
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
 }
