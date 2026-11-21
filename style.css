@@ -380,6 +380,49 @@ body {
     color: #59645b;
     border-radius: 30px;
 }
+/* Intro ticker */
+.intro-strip { background: var(--ink); color: var(--paper); }
+.strip-inner { min-height: 65px; display: flex; justify-content: space-between; align-items: center; gap: 15px; font-size: 10px; font-weight: 700; letter-spacing: 2px; }
+.strip-inner i { color: var(--gold); font-style: normal; font-size: 15px; }
+
+
+/* Marks table */
+.marks-wrap { overflow-x: auto; border: 1px solid var(--line); background: var(--white); }
+.marks-table { width: 100%; border-collapse: collapse; text-align: left; }
+.marks-table th { background: var(--ink); color: var(--paper); font-size: 10px; letter-spacing: 1.2px; text-transform: uppercase; font-weight: 600; }
+.marks-table th, .marks-table td { padding: 15px 22px; border-bottom: 1px solid var(--line); }
+.marks-table td { font-size: 13px; }
+.marks-table td:nth-child(2) { color: var(--gold); font-weight: 700; }
+.marks-table tbody tr:last-child td { border-bottom: 0; }
+.marks-table tbody tr:hover { background: #f7f3e9; }
+.table-note { color: var(--muted); font-size: 11px; margin-top: 13px; }
+
+/* Achievements */
+.achievement-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 14px; }
+.achievement-card { background: var(--white); border: 1px solid #e0dccf; padding: 25px; min-height: 190px; }
+.achievement-main { grid-row: span 2; background: var(--ink); color: var(--paper); padding: 34px; }
+.achievement-symbol { display: block; font-size: 30px; color: var(--gold-light); margin-bottom: 24px; }
+.achievement-main .project-type { color: var(--gold-light); }
+.achievement-main h3 { font-size: 29px; margin-top: 10px; }
+.achievement-main p:not(.project-type) { color: #bdc5bc; }
+.achievement-score { display: block; font: 600 43px var(--serif); color: var(--gold); }
+.achievement-score span { font: 400 14px var(--sans); color: var(--muted); }
+
+/* Hobbies */
+.hobby-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.hobby-item { padding: 25px 23px 28px; border-right: 1px solid var(--line); position: relative; }
+.hobby-item:last-child { border-right: 0; }
+.hobby-item > span { color: #a9a99b; font-size: 10px; }
+.hobby-icon { font-size: 27px; color: var(--gold); margin: 20px 0 13px; }
+.hobby-item h3 { font-size: 18px; }
+
+/* Journey */
+.journey-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
+.journey-list article { display: grid; grid-template-columns: 35px 1fr; gap: 15px; padding: 18px 0; border-bottom: 1px solid #3b4943; }
+.journey-list article:last-child { border-bottom: 0; }
+.journey-list h3 { color: var(--paper); }
+
+
 
 /* =========================================
    8. CONTACT FORM
@@ -460,3 +503,6 @@ body {
     justify-content: space-between;
     padding-bottom: 20px;
 }
+
+
+
