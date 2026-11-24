@@ -3,12 +3,33 @@
    Used throughout the website
    ========================================= */
 :root {
-    --paper-deep: #979494;
-    --white: #eeeeee;
-    --gold: #a27626;
-    --muted: #666666;
-    --serif: Georgia, serif;
+  --ink: #172321;
+  --ink-soft: #24332f;
+  --paper: #f7f5ef;
+  --paper-deep: #eeece3;
+  --white: #fffefa;
+  --gold: #b88b3b;
+  --gold-light: #e6d3a6;
+  --muted: #737a72;
+  --line: #dedbd0;
+  --serif: "Playfair Display", Georgia, serif;
+  --sans: "DM Sans", Arial, sans-serif;
 }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 95px; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; }
+.container { width: min(1120px, calc(100% - 48px)); margin-inline: auto; }
+
+
 
 /* =========================================
    2. GENERAL PAGE STYLING
@@ -400,6 +421,32 @@ body {
 .strip-inner i { color: var(--gold); font-style: normal; font-size: 15px; }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Marks table */
 .marks-wrap { overflow-x: auto; border: 1px solid var(--line); background: var(--white); }
 .marks-table { width: 100%; border-collapse: collapse; text-align: left; }
@@ -435,6 +482,46 @@ body {
 .journey-list article { display: grid; grid-template-columns: 35px 1fr; gap: 15px; padding: 18px 0; border-bottom: 1px solid #3b4943; }
 .journey-list article:last-child { border-bottom: 0; }
 .journey-list h3 { color: var(--paper); }
+
+
+/* Academic dark section */
+.section-dark { background: var(--ink); color: var(--paper); }
+.academic-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 100px; align-items: center; }
+.academic-layout h2, .journey-layout h2, .contact-copy h2 { font-size: clamp(39px, 4.5vw, 54px); margin-top: 16px; }
+.dark-copy { max-width: 430px; color: #b9c1b9; font-size: 13px; line-height: 1.9; margin-top: 22px; }
+.school-facts { display: flex; flex-wrap: wrap; gap: 28px; border-top: 1px solid #3b4943; margin-top: 35px; padding-top: 23px; }
+.school-facts div { display: flex; flex-direction: column; gap: 5px; }
+.school-facts span { color: var(--gold-light); font-size: 8px; letter-spacing: 1.2px; }
+.school-facts strong { font: 600 14px var(--serif); }
+.subject-panel { background: #21312b; padding: 28px 32px; border: 1px solid #3b4943; }
+.subject-panel .panel-label { color: var(--gold-light); }
+.subject-row { display: grid; grid-template-columns: 30px 1fr 1fr; align-items: center; gap: 12px; padding: 13px 0; border-bottom: 1px solid #3b4943; }
+.subject-row:last-child { border-bottom: 0; }
+.subject-row span { color: var(--gold-light); font-size: 10px; }
+.subject-row b { font: 600 14px var(--serif); }
+.subject-row small { color: #aab5ac; font-size: 10px; text-align: right; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
