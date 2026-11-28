@@ -434,31 +434,6 @@ body {
 .value-item h3, .journey-list h3 { font: 600 17px var(--serif); }
 .value-item p, .journey-list p { color: var(--muted); font-size: 12px; margin-top: 3px; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Marks table */
 .marks-wrap { overflow-x: auto; border: 1px solid var(--line); background: var(--white); }
 .marks-table { width: 100%; border-collapse: collapse; text-align: left; }
@@ -489,11 +464,31 @@ body {
 .hobby-icon { font-size: 27px; color: var(--gold); margin: 20px 0 13px; }
 .hobby-item h3 { font-size: 18px; }
 
+
 /* Journey */
-.journey-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
+.journey-layout { display: grid; grid-template-columns: 3fr 3fr; gap: 100px; align-items: center; }
 .journey-list article { display: grid; grid-template-columns: 35px 1fr; gap: 15px; padding: 18px 0; border-bottom: 1px solid #3b4943; }
-.journey-list article:last-child { border-bottom: 0; }
+.journey-list article:last-child { border-bottom: 25; }
 .journey-list h3 { color: var(--paper); }
+
+.academic-layout h2 em,
+.journey-layout h2 em,
+.contact-copy h2 em { color: #8178bd; }
+.dark-copy { color: #68748a; }
+.school-facts { border-color: #dcddeb; }
+.school-facts span { color: #8178bd; }
+.subject-panel {
+  background: rgba(255,255,255,.82);
+  border: 1px solid #e0e1ef;
+  border-radius: 13px;
+  box-shadow: 0 10px 30px rgba(53, 62, 91, .045);
+}
+.subject-panel .panel-label { color: #8178bd; }
+.subject-row { border-color: #ececf2; }
+.subject-row span { color: #8178bd; }
+.subject-row b { color: #34415c; }
+.subject-row small { color: #7b8495; }
+
 
 
 /* Academic dark section */
@@ -515,64 +510,124 @@ body {
 
 
 /* =========================================
-   8. CONTACT FORM
+   8. CONTACT SECTION
    HTML: <section class="contact" id="contact">
    ========================================= */
-.contact h3 {
-    color: rgb(250, 250, 106);
-}
-
-/* Contact form container */
 .contact {
-    background-color: rgb(0, 0, 0);
-    padding: 30px;
-    border-radius: 20px;
-    border: 2px solid rgb(235, 231, 35);
+    min-height: 430px;
+    padding: 70px 8.5%;
+    background: #f0eff8;
+    display: flex;
+    align-items: center;
 }
-
-/* Contact form inputs, textarea and dropdown */
-.contact input,
-.contact textarea,
-.contact select {
+.contact-layout {
     width: 100%;
-    padding: 14px;
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+}
+.contact-copy { max-width: 440px; }
+.contact-eyebrow {
+    color: #8b7fbd;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.contact-copy h2 {
+    color: #20334b;
+    font: 500 clamp(32px, 4vw, 43px)/1.08 Georgia, serif;
+    letter-spacing: -1.5px;
+    margin: 0 0 15px;
+}
+.contact-copy h2 em { color: #8178bd; font-style: italic; }
+.contact-copy p {
+    max-width: 390px;
+    color: #68748a;
+    font-size: 10px;
+    line-height: 1.9;
+}
+.contact-mark {
+    color: #dedcf0;
+    font: 700 75px/1 Georgia, serif;
+    margin-top: 22px;
+}
+.contact-card {
+    width: 100%;
+    max-width: 500px;
+    justify-self: end;
+    padding: 24px 20px 18px;
+    background: #fff;
+    border: 1px solid #e2e1ed;
+    border-radius: 8px;
+    box-shadow: 0 12px 35px rgba(48, 53, 85, .07);
+}
+.contact-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #8178bd;
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    margin-bottom: 17px;
+}
+.contact-card-top span:last-child { font-size: 14px; }
+.contact-card form { display: flex; flex-direction: column; gap: 7px; }
+.contact-card label {
+    color: #34415c;
+    font-size: 8px;
+    font-weight: 700;
+    margin-top: 2px;
+}
+.contact-card input,
+.contact-card select,
+.contact-card textarea {
+    width: 100%;
+    padding: 9px 10px;
+    color: #34415c;
+    background: #fbfbfe;
+    border: 1px solid #dcddec;
+    border-radius: 4px;
+    font: 8px Arial, sans-serif;
     box-sizing: border-box;
-    border-radius: 10px;
-    border: 1px solid gold;
-    background-color: grey;
-    color: rgb(255, 255, 255);
-    font: inherit;
 }
-
-/* Contact form submit button */
-.contact button {
-    background-color: gold;
-    padding: 14px 22px;
-    border-radius: 15px;
+.contact-card input, .contact-card select { min-height: 26px; }
+.contact-card textarea { min-height: 46px; resize: vertical; }
+.contact-card input::placeholder,
+.contact-card textarea::placeholder { color: #8991a6; opacity: 1; }
+.contact-card select { color: #59647b; }
+.contact-card input:focus,
+.contact-card select:focus,
+.contact-card textarea:focus {
+    outline: 2px solid #c7c2e5;
+    border-color: #8178bd;
+}
+.contact-card button {
+    align-self: flex-start;
+    margin-top: 4px;
+    padding: 10px 12px;
+    color: #fff;
+    background: #737db4;
+    border: 0;
+    border-radius: 4px;
+    font-size: 8px;
+    font-weight: 700;
     cursor: pointer;
+    transition: background .25s ease, transform .25s ease;
 }
+.contact-card button:hover { background: #626da7; transform: translateY(-2px); }
+.contact-card button span { margin-left: 10px; }
+.contact-note { color: #8b91a1; font-size: 6px; margin-top: 8px; }
 
-/* Contact form labels */
-.contact label {
-    color: aliceblue;
-}
-
-/* Contact form paragraphs */
-.contact p {
-    color: antiquewhite;
-}
-
-/* Focus effect for form fields */
-.contact input:focus,
-.contact textarea:focus,
-.contact select:focus {
-    outline: 2px solid gold;
-}
-
-/* Placeholder text */
-.contact textarea::placeholder,
-.contact input::placeholder {
-    color: white;
+@media (max-width: 700px) {
+    .contact { padding: 55px 6%; }
+    .contact-layout { grid-template-columns: 1fr; gap: 30px; }
+    .contact-copy { max-width: 100%; }
+    .contact-card { justify-self: stretch; max-width: 100%; }
 }
 
 /* =========================================
@@ -615,4 +670,798 @@ body {
 .achievement-main h3,
 .achievement-main p:not(.project-type) {
     color: var(--ink);
+}
+
+/* =====================================================
+   10. FINAL TYPOGRAPHY, ALIGNMENT AND RESPONSIVE POLISH
+   These overrides keep the existing content and design.
+   ===================================================== */
+
+/* Consistent base typography */
+html {
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-size: 15px;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Main headings */
+.hero h1 {
+    font-size: clamp(38px, 4.5vw, 54px);
+    line-height: 1.14;
+}
+
+.section-heading h2,
+.academic-layout h2,
+.journey-layout h2 {
+    font-size: clamp(32px, 3.8vw, 44px);
+    line-height: 1.2;
+}
+
+.contact-copy h2 {
+    font-size: clamp(34px, 3.8vw, 44px);
+    line-height: 1.18;
+}
+
+/* Paragraphs and supporting text */
+.intro-text,
+.section-intro,
+.about-lead p,
+.skill-card p,
+.project-info > p:not(.project-type),
+.achievement-card p,
+.hobby-item p,
+.dark-copy,
+.goal-content > p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.about-lead .large-copy {
+    font-size: clamp(21px, 2.2vw, 25px);
+    line-height: 1.5;
+}
+
+/* Card and subsection headings */
+.skill-card h3,
+.project-info h3,
+.achievement-card h3,
+.hobby-item h3,
+.value-item h3,
+.journey-list h3,
+.goal-content h3 {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* Small labels should remain readable */
+.eyebrow,
+.panel-label,
+.card-tag,
+.project-type,
+.learning-label {
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.card-number,
+.value-item > span,
+.journey-list article > span,
+.hobby-item > span {
+    font-size: 11px;
+}
+
+/* =====================================================
+   NAVBAR: KEEP ALL TABS ON THE SAME VERTICAL LINE
+   ===================================================== */
+.navbar {
+    min-height: 66px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.navbar-name {
+    flex: 0 0 auto;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.navbar-links {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: clamp(12px, 1.8vw, 24px);
+}
+
+.navbar-links > a,
+.navbar-links > .dropdown,
+.navbar-links .dropbtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    min-height: 40px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.navbar-links > .dropdown {
+    position: relative;
+}
+
+.navbar-links a {
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.navbar-links .connect-btn {
+    min-height: 40px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.dropdown-content {
+    top: calc(100% + 2px);
+}
+
+/* General section alignment */
+.section-heading {
+    margin-bottom: 28px;
+}
+
+.section-heading h2 {
+    margin-top: 8px;
+}
+
+.skill-card,
+.project-card,
+.achievement-card {
+    min-width: 0;
+}
+
+.skill-card p,
+.project-info p,
+.achievement-card p,
+.hobby-item p {
+    overflow-wrap: break-word;
+}
+
+/* Contact: readable form typography and balanced spacing */
+.contact {
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.contact-layout {
+    align-items: center;
+    gap: clamp(35px, 6vw, 75px);
+}
+
+.contact-copy {
+    width: 100%;
+}
+
+.contact-eyebrow {
+    font-size: 10px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.contact-copy p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.contact-card {
+    padding: 28px 24px 22px;
+}
+
+.contact-card-top {
+    font-size: 10px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.contact-card label {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-top: 5px;
+}
+
+.contact-card input,
+.contact-card select,
+.contact-card textarea {
+    min-height: 40px;
+    padding: 10px 12px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.contact-card textarea {
+    min-height: 86px;
+}
+
+.contact-card input::placeholder,
+.contact-card textarea::placeholder {
+    font-size: 12px;
+}
+
+.contact-card button {
+    min-height: 42px;
+    padding: 11px 16px;
+    font-size: 12px;
+}
+
+.contact-note {
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+/* =====================================================
+   TABLET VIEW
+   ===================================================== */
+@media (min-width: 601px) and (max-width: 950px) {
+    .navbar {
+        padding-left: 5%;
+        padding-right: 5%;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar-name {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .navbar-links {
+        flex: 1 1 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar-links a {
+        font-size: 11px;
+    }
+
+    .navbar-links .connect-btn {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hero {
+        padding-left: 5%;
+        padding-right: 5%;
+        gap: 28px;
+    }
+
+    .about-layout,
+    .academic-layout,
+    .journey-layout,
+    .goals-layout {
+        gap: 35px;
+    }
+
+    .contact {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .contact-layout {
+        gap: 30px;
+    }
+}
+
+/* =====================================================
+   MOBILE VIEW
+   ===================================================== */
+@media (max-width: 700px) {
+    html {
+        scroll-padding-top: 120px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: min(100% - 36px, 560px);
+    }
+
+    /* Navbar: centered rows, with each tab aligned evenly */
+    .navbar {
+        min-height: 0;
+        height: auto;
+        padding: 14px 5%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar-name {
+        font-size: 23px;
+        align-self: center;
+    }
+
+    .navbar-links {
+        width: 100%;
+        display: flex;
+        flex: 0 1 auto;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        column-gap: 15px;
+        row-gap: 4px;
+    }
+
+    .navbar-links > a,
+    .navbar-links > .dropdown,
+    .navbar-links .dropbtn {
+        min-height: 34px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.2;
+    }
+
+    .navbar-links a {
+        font-size: 11px;
+    }
+
+    .navbar-links .connect-btn {
+        min-height: 34px;
+        padding: 0 12px;
+    }
+
+    .dropdown-content {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100%;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 0;
+        padding: 48px 5% 38px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: clamp(34px, 8vw, 40px);
+        line-height: 1.15;
+    }
+
+    .intro-text {
+        font-size: 14px;
+    }
+
+    .hero-graphic {
+        width: 100%;
+        max-width: 100%;
+        height: 230px;
+    }
+
+    /* Intro strip */
+    .strip-inner {
+        min-height: 55px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 12px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    /* Section headings */
+    .section-heading {
+        margin-bottom: 22px;
+    }
+
+    .section-heading h2,
+    .academic-layout h2,
+    .journey-layout h2 {
+        font-size: clamp(29px, 7vw, 34px);
+        line-height: 1.2;
+    }
+
+    /* Keep existing content; stack existing columns on narrow screens */
+    .about-layout,
+    .academic-layout,
+    .journey-layout,
+    .goals-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+    }
+
+    .about-lead .large-copy {
+        font-size: 21px;
+    }
+
+    .skill-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .skill-card {
+        padding: 20px 17px;
+        min-height: 0;
+    }
+
+    .skill-card h3,
+    .project-info h3,
+    .achievement-card h3,
+    .hobby-item h3 {
+        font-size: 17px;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .subject-panel {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .subject-row {
+        grid-template-columns: 26px minmax(0, 1fr);
+        gap: 7px 10px;
+    }
+
+    .subject-row small {
+        grid-column: 2;
+        text-align: left;
+    }
+
+    /* Marks table remains scrollable instead of squeezing text */
+    .marks-wrap {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .marks-table {
+        min-width: 420px;
+    }
+
+    .marks-table th,
+    .marks-table td {
+        padding: 11px 13px;
+        font-size: 12px;
+    }
+
+    .achievement-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .achievement-main {
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+
+    .achievement-card {
+        min-width: 0;
+        padding: 20px 16px;
+    }
+
+    .achievement-main h3 {
+        font-size: 25px;
+    }
+
+    .hobby-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hobby-item {
+        padding: 20px 14px;
+        border-right: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+    }
+
+    .hobby-item:nth-child(2n) {
+        border-right: 0;
+    }
+
+    .hobby-item:last-child,
+    .hobby-item:nth-last-child(2) {
+        border-bottom: 0;
+    }
+
+    .goal-quote {
+        padding: 25px;
+        font-size: 21px;
+    }
+
+    /* Contact */
+    .contact {
+        min-height: 0;
+        padding: 48px 5%;
+    }
+
+    .contact-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 25px;
+    }
+
+    .contact-copy {
+        max-width: 100%;
+    }
+
+    .contact-copy h2 {
+        font-size: clamp(30px, 7vw, 36px);
+    }
+
+    .contact-copy p {
+        font-size: 14px;
+    }
+
+    .contact-mark {
+        font-size: 58px;
+        margin-top: 14px;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: 100%;
+        justify-self: stretch;
+        padding: 24px 20px 20px;
+    }
+
+    .contact-card label {
+        font-size: 12px;
+    }
+
+    .contact-card input,
+    .contact-card select,
+    .contact-card textarea {
+        min-height: 42px;
+        font-size: 14px;
+    }
+
+    .contact-card textarea {
+        min-height: 90px;
+    }
+
+    .contact-card button {
+        min-height: 42px;
+        font-size: 13px;
+    }
+
+    .contact-note {
+        font-size: 10px;
+    }
+
+    /* Footer */
+    .top {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 12px 20px;
+    }
+
+    .site-footer {
+        padding: 24px 5%;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 420px) {
+    .navbar-links {
+        column-gap: 10px;
+        row-gap: 3px;
+    }
+
+    .navbar-links a {
+        font-size: 10px;
+    }
+
+    .skill-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-main {
+        grid-column: auto;
+    }
+
+    .hobby-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hobby-item,
+    .hobby-item:nth-child(2n) {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .hobby-item:last-child {
+        border-bottom: 0;
+    }
+
+    .contact-card {
+        padding: 21px 16px 18px;
+    }
+}
+
+/* =====================================================
+   11. FINAL HOME ALIGNMENT + NAVBAR ALIGNMENT FIX
+   Added after all existing rules so these values win.
+   No HTML content or section layout is changed.
+   ===================================================== */
+
+/* Align the Home section with the same centered page width
+   used by the other sections that contain .container. */
+.hero {
+    width: min(1120px, calc(100% - 48px));
+    min-height: 395px;
+    margin: 0 auto;
+    padding: 75px 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    box-sizing: border-box;
+}
+
+.hero-content {
+    flex: 1 1 510px;
+    min-width: 0;
+    max-width: 510px;
+}
+
+.hero-graphic {
+    flex: 0 1 400px;
+    width: 100%;
+    min-width: 0;
+    max-width: 400px;
+}
+
+/* Keep every desktop navigation item on one baseline. */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-name {
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links > a,
+.navbar-links > .dropdown,
+.navbar-links > .dropdown > .dropbtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    min-height: 40px;
+    line-height: 1.2;
+    vertical-align: middle;
+}
+
+.navbar-links > .dropdown {
+    position: relative;
+}
+
+.navbar-links > .connect-btn {
+    padding: 0 15px;
+    min-height: 40px;
+}
+
+/* Tablet: preserve the centered Home width and allow the navbar
+   to use two tidy rows when there is not enough horizontal room. */
+@media (min-width: 701px) and (max-width: 950px) {
+    .hero {
+        width: min(100% - 40px, 820px);
+        padding: 55px 0 35px;
+        gap: 28px;
+    }
+
+    .hero-content {
+        flex: 1 1 0;
+    }
+
+    .hero-graphic {
+        flex: 0 1 340px;
+        max-width: 340px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 4px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navbar-name {
+        flex: 0 0 100%;
+        justify-content: center;
+    }
+
+    .navbar-links {
+        flex: 0 1 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* Mobile: stack the existing Home content without changing it. */
+@media (max-width: 700px) {
+    .hero {
+        width: min(90%, 560px);
+        min-height: 0;
+        margin: 0 auto;
+        padding: 42px 0 36px;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 28px;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: none;
+        flex: 0 1 auto;
+    }
+
+    .hero-graphic {
+        width: 100%;
+        max-width: none;
+        height: 230px;
+        flex: 0 0 auto;
+    }
+
+    .navbar-links > a,
+    .navbar-links > .dropdown,
+    .navbar-links > .dropdown > .dropbtn {
+        min-height: 34px;
+    }
+
+    .navbar-links > .connect-btn {
+        min-height: 34px;
+    }
+}
+
+@media (max-width: 420px) {
+    .hero {
+        width: 90%;
+        padding-top: 35px;
+        padding-bottom: 30px;
+    }
+
+    .hero-graphic {
+        height: 210px;
+    }
 }
